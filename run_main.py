@@ -1,4 +1,5 @@
 from cubert import cubert
+from seedgen import gen_seed
 import sys
 def main():
     #user input
@@ -7,6 +8,7 @@ def main():
     else:
         command=""
     print("seed: ",command)
+    command = gen_seed()
     cube = cubert(command)
     cube.print_cube()
     
@@ -17,6 +19,6 @@ def main():
         
         cube.run_moves(command)
         cube.print_cube()
-            
+
 if __name__ == "__main__":
     main()
