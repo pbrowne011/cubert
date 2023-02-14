@@ -2,8 +2,10 @@ from cubert import cubert
 from seedgen import gen_seed
 from solver import solver
 import sys
+import time
 def main():
     #user input
+    startTime = time.time()
     if(len(sys.argv)>1):
         command=sys.argv[1]
     else:
@@ -15,6 +17,9 @@ def main():
     
     while True:
         solver(cube)
+        executionTime = (time.time() - startTime)
+        print("Execution time in seconds: " + str(executionTime))
+        print("Number of cubes per second: " + str(int(1 / executionTime)))
         command = input("Enter your command(s): ")
         if command == "exit":
             exit()
