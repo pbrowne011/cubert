@@ -1,6 +1,6 @@
 from cubert import cubert
 from seedgen import gen_seed
-from solver import cross
+from solver import solver
 import sys
 def main():
     #user input
@@ -14,7 +14,7 @@ def main():
     cube.print_cube()
     
     while True:
-        print(cross(cube))
+        solver(cube)
         command = input("Enter your command(s): ")
         if command == "exit":
             exit()
