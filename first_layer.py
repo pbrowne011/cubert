@@ -101,7 +101,7 @@ def first_layer(self):
             bottom = update_bottom(self)
 
         # third orientation: white is on front side
-        if bottom[i][1] == "w":
+        elif bottom[i][1] == "w":
             if i == 0:
                 moves+="y'g'yg"
             elif i == 1:
