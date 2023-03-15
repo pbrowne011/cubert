@@ -1,5 +1,5 @@
 class cubert:
-    
+        
     def print_cube(self):
         print("{", end='')
         for i in range(6):

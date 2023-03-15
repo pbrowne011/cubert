@@ -1,5 +1,26 @@
 # cubert - A simple text-based Rubik's Cube Simulator
-cubert~
+
+This repository contains two Rubik's Cube solver programs: a layered solution using the beginner's algorithm, and an implementation of the Thistlethwaite algorithm.
+
+The layered solution can solve ~500-600 cubes per second, with average solve times ranging between 1 and 2 milliseconds. It takes between 300 and 500 moves to solve. The Thistlethwaite algorithm has not been implemented yet, but should result in similar solve times. It will take less than 52 moves to solve (and may take as low as 45, depending on my implementation). It will use the IDA* search algorithm to traverse pregenerated tables of moves for each of the four groups.
+
+$~~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+Below is the README.md from the original repository:
+
+---
 
 Just requires python3. 
 

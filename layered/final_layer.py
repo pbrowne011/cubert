@@ -152,6 +152,6 @@ def final_layer(self):
             self.cube[r*9+6:r*9+9] == ["r"]*3:
             break
         moves=""
-    cubert.print_cube(self)
+    # cubert.print_cube(self)
 
     return
